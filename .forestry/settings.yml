@@ -4,8 +4,14 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: sample
+  label: Sample Page
+  match: "**/*"
 - type: heading
   label: Content
+- type: heading
+  label: Globals
 - type: directory
   path: src/posts
   label: Posts
@@ -13,8 +19,6 @@ sections:
   match: "*.md"
   templates:
   - post
-- type: heading
-  label: Globals
 - type: document
   path: src/_data/navigation.json
   label: Navigation
