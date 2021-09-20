@@ -5,6 +5,8 @@ jobs:
   build_deploy:
     runs-on: ubuntu-18.04
     steps:
+      - name: npm install
+        uses: jaid/action-npm-install@v1.2.1
       - uses: actions/checkout@master
       - name: Build
         uses: TartanLlama/actions-eleventy@v1.2
